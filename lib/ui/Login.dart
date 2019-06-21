@@ -49,8 +49,10 @@ class LoginState extends State<Login> {
       ),
       backgroundColor: Colors.blueGrey,
       body: new Container(
-        alignment: Alignment.topCenter,
+        alignment: Alignment.center,
         child: new Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             new Image.asset(
               'images/face.png',
@@ -60,16 +62,17 @@ class LoginState extends State<Login> {
             ),
 
             //conatiner
+            new Padding(padding: new EdgeInsets.all(45.0)),
             new Container(
               height: 180.0,
               margin: EdgeInsets.all(10),
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: new BorderRadius.only(
-                    topLeft: const Radius.circular(20.0),
-                    topRight: const Radius.circular(20.0),
-                    bottomLeft: const Radius.circular(20.0),
-                    bottomRight: const Radius.circular(20.0),
+                  topLeft: const Radius.circular(20.0),
+                  topRight: const Radius.circular(20.0),
+                  bottomLeft: const Radius.circular(20.0),
+                  bottomRight: const Radius.circular(20.0),
                 ),
                 color: Colors.white,
                 shape: BoxShape.rectangle,
@@ -122,7 +125,7 @@ class LoginState extends State<Login> {
                 ],
               ),
             ),
-            new Padding(padding: new EdgeInsets.all(14.0)),
+            new Padding(padding: new EdgeInsets.all(25.0)),
             new Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

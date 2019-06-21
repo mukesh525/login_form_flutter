@@ -60,9 +60,11 @@ class LoginState extends State<Login> {
               height: 90.0,
               color: Colors.lightGreen,
             ),
+            new Padding(padding: new EdgeInsets.all(5.0)),
+            new Image.network('http://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',width: 300.0,),
 
             //conatiner
-            new Padding(padding: new EdgeInsets.all(45.0)),
+            new Padding(padding: new EdgeInsets.all(15.0)),
             new Container(
               height: 180.0,
               margin: EdgeInsets.all(10),

@@ -50,10 +50,8 @@ class LoginState extends State<Login> {
       backgroundColor: Colors.blueGrey,
       body: new Container(
         alignment: Alignment.center,
-        child: new Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
+        child: new ListView(
+         children: <Widget>[
             new Image.asset(
               'images/face.png',
               width: 90.0,
@@ -61,7 +59,7 @@ class LoginState extends State<Login> {
               color: Colors.lightGreen,
             ),
             new Padding(padding: new EdgeInsets.all(5.0)),
-            new Image.network('http://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',width: 300.0,),
+            new Image.network('http://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',width: 100.0,),
 
             //conatiner
             new Padding(padding: new EdgeInsets.all(15.0)),
@@ -104,6 +102,7 @@ class LoginState extends State<Login> {
                     controller: _passController,
                     decoration: new InputDecoration(
                         hintText: "Password", icon: new Icon(Icons.lock)),
+                    obscureText: true,
                   ),
                   new Padding(padding: new EdgeInsets.all(10.0)),
                   new Center(
